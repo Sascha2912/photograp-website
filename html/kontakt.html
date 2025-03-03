@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt aufnahme</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/raster.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/layout_media_queries.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- KOPFBEREICH -->
+        <header>
+            <a class="logo-1" href="../index.html"><img src="../img/Banner/Banner1200pixel.jpg" alt="Stephanie_Palm_Fotografie_Logo-1"></a>
+            <a class="logo-2" href="../index.html"><img src="../img/Logo500px.jpg" alt="Stephanie_Palm_Fotografie_Logo-2"></a>
+            <a class="logo-3" href="../index.html"><img src="../img/Logo_rosa_500px.jpg" alt="Stephanie_Palm_Fotografie_Logo-3"></a>
+        </header>
+        <nav>
+            <a id="open" class="open" title="Navigation öffnen" href="#open">&#x2261;</a>
+            <a href="#" class="close" title="Navigation schließen">X</a>
+            <ul class="flex show">
+                <li class="col-20"><a href="../index.html">Home</a></li>
+                <li class="col-20"><a href="tierfotografie.html">Tierfotografie</a></li>
+                <li class="col-20"><a href="portraits.html">Portraits</a></li>
+                <li class="col-20"><a href="urban.html">Urban</a></li>
+                <li class="col-20"><a href="makros.html">Makros</a></li>
+                <li class="footernav"><a href="about.html">About</a></li>
+                <li class="footernav active"><a href="kontakt.html">Kontakt</a></li>
+                <li class="footernav"><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+         <!-- MITTELBEREICH -->
+            <h1>Kontakt aufnehmen</h1>
+            <form method="GET" class="wrap-2">
+
+                <label for="anrede">Anrede:</label>
+                <select id="anrede" name="anrede">
+                    <option value="">Bitte wählen Sie:</option>
+                    <option value="keine_Angabe">Keine Angabe</option>
+                    <option value="Herr">Herr</option>
+                    <option value="Frau">Frau</option>
+                </select>
+            
+                <label for="vorname">Vorname<span class="pflicht">*</span>:</label>
+                <input id="vorname" name="vorname" required>
+                
+                <label for="nachname">Nachname<span class="pflicht">*</span>:</label>
+                <input id ="nachname" name="nachname" required>
+                
+                <label for="stadt">Stadt:</label>
+                <input id="stadt" name="stadt">
+                
+                <label for="email">E-Mail<span class="pflicht">*</span>:</label>
+                <input id="email" name="email" type="email" required>
+                
+                <label for="telefon">Telefon:</label>
+                <input type="tel" id="telefon" name="telefon">
+                
+                <label for="note">Nachricht<span class="pflicht">*</span>:</label>
+                <textarea id="note" name="note" rows="4" cols="50" placeholder="Text einfügen" required></textarea>
+                 
+                <input type="submit" value="Absenden" class="button">
+                <p><span class="span-1">Hinweis</span>: Bitte die mit <span class="pflicht">*</span> gekennzeichneten Felder ausfüllen.</p>
+            </form>
+            <figure><img class="logo_rosa-2" src="../img/Logo_rosa_500px.jpg" alt="rosa_logo-2"></figure>
+        
+
+        <!-- ABSCHLUSSBEREICH -->
+        <footer>
+            <ul class="flex">
+                <li class=""><a href="about.html">About</a></li>
+                <li class="active"><a href="kontakt.html">Kontakt</a></li>
+                <li class=""><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

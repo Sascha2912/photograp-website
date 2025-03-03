@@ -1,0 +1,9 @@
+@font-face{
+    font-family:daniel_regular;
+    src:url(../fonts/daniel.ttf) format('truetype'),
+        url(../fonts/danielbd.ttf) format('truetype'),
+        url(../fonts/danielbk.ttf) format('truetype');
+}
+h1,h2,h3{
+    font-family:daniel_regular;
+}

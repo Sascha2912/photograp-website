@@ -1,0 +1,270 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 80 version
+*/
+
+/* Globale Angaben */
+
+
+/* Resetten */
+/* *{margin:0;padding:0;} */
+
+
+/* Boxmodell festlegen */
+html{
+    /* Standard Boxmodell */
+    -webkit-box-sizing:content-box;
+       -moz-box-sizing:content-box;
+            box-sizing:content-box;
+}
+body{
+    /* filter:grayscale(1); */
+}
+/* Alternatives Boxmodell */
+*,*:before,*:after{
+    -webkit-box-sizing:inherit;
+       -moz-box-sizing:inherit;
+            box-sizing:inherit;
+}
+.border-box{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+
+:root{
+    /* Allgemeine Styleguide vorgaben */
+     --font1:Courier,monospace,serif;
+     --font2:Courier,monospace,serif;
+
+    /* Farben sammeln*/
+    --color1:#ffffff; /*Hintergrund-farbe*/
+    --color2:#5a5a5a; /*Text-farbe*/
+    --color3:#737378; /*Überschriften*/
+    --color4:#d97d7a; /*Hover-farbe*/
+    --color5:#344955;
+    /* Anklickbare Elemente */
+    --color-a-in:inherit;
+    --color-a1:#78290f;
+    --color-a2:#ff7d00;
+    /* Extra-Farben */
+    /* --color-a3:; */
+    /* --color-a4:; */
+
+    /* Idividuelle Bereichs / Selektorenzuweisung */
+    --page-font:var(--font1);
+    --page-bg:var(--color1); /*Hintergrund*/
+    --page-text:var(--color2); /*Text-farbe*/
+    --page-text-size:100.01%;
+
+/* Alle Überschriften */
+--heading-text:var(--color3);
+--heading-font:var(--font2);
+/* --heading-top-mar:0.67em;
+--heading-bot-mar:0.67em; */
+
+/* h1 */
+/* --heading1-text:var(--color3); */
+--heading1-text-size:2em;
+/* --heading1-font:var(--font2); */
+--heading1-top-mar:0.67em;
+--heading1-bot-mar:0.67em;
+
+/* h2 */
+/* --heading2-text:var(--color3); */
+--heading2-text-size:150%;
+/* --heading2-font:times; */
+--heading2-top-mar:0.83em;
+--heading2-bot-mar:0.83em;
+
+/* h3 */
+/* --heading3-text:var(--color3); */
+--heading3-text-size:100%;
+/* --heading3-font:var(--font2); */
+--heading3-top-mar:1em;
+--heading3-bot-mar:1em;
+
+/* h4 */
+/* --heading4-text:lightgreen;
+--heading4-text-size:200%;
+--heading4-font:var(--font2);
+--heading4-top-mar:1.33em;
+--heading4-bot-mar:1.33em; */
+
+/* h5 */
+/* --heading5-text:lightblue;
+--heading5-text-size:0.83em;
+--heading5-font:var(--font2);
+--heading5-top-mar:1.67em;
+--heading5-bot-mar:1.67em; */
+
+/* h6 */
+/* --heading6-text:lightblue;
+--heading6-text-size:0.67em;
+--heading6-font:var(--font2);
+--heading6-top-mar:2.33em;
+--heading6-bot-mar:2.33em; */
+
+/* Li */
+--li-display:inline-block;
+--li-bg-color:none;
+--li-text-color:inherit;
+--li-text-deco:none;
+--li-mar-top:4px;
+--li-mar-bot:4px;
+--li-mar-left:0px;
+--li-mar-right:0px;
+--li-pad-top:0px;
+--li-pad-bot:0px;
+--li-pad-left:0px;
+--li-pad-right:0px;
+/* Anker */
+--a-display:inline-block;
+--a-bg-color:none;
+--a-text-color:inherit;
+--a-text-deco:none;
+--a-mar-top:0px;
+--a-mar-bot:0px;
+
+/* Hover/Focus */
+--hover-text-deco:none;
+--hover-bg-color:none;
+--hover-text-color:var(--color4);
+
+/* IMG */
+--img-display:inline-block;
+
+/* A IMG */
+--a-img-min-width:300px;
+--a-img-min-height:200px;
+}
+
+html{
+    font-family:var(--page-font);
+    background:var(--page-bg,#000);
+    color:var(--page-text);
+    line-height:1.4;
+    font-size:var(--page-text-size,100.01%);
+}
+
+body{
+    /* margin:0; */
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:var(--heading-text);
+    margin-top:var(--heading-top-mar, initial);
+    margin-bottom:var(--heading-bot-mar, initial);
+    font-family:var(--heading-font);
+}
+h1{
+    color:var(--heading1-text, var(--heading-text));
+    margin-top:var(--heading1-top-mar, 0.67em);
+    margin-bottom:var(--heading1-bot-mar, 0.67em);
+    font-family:var(--heading1-font,var(--heading-font));
+    font-size:var(--heading1-text-size);
+}
+h2{
+    color:var(--heading2-text, var(--heading-text));
+    margin-top:var(--heading2-top-mar, 0.83em);
+    margin-bottom:var(--heading2-bot-mar, 0.83em);
+    font-family:var(--heading2-font,var(--heading-font));
+    font-size:var(--heading2-text-size);
+}
+h3{
+    color:var(--heading3-text, var(--heading-text));
+    margin-top:var(--heading3-top-mar, 1em);
+    margin-bottom:var(--heading3-bot-mar, 1em);
+    font-family:var(--heading3-font,var(--heading-font));
+    font-size:var(--heading3-text-size);
+}
+h4{
+    color:var(--heading4-text, var(--heading-text));
+    margin-top:var(--heading4-top-mar, 1.33em);
+    margin-bottom:var(--heading4-bot-mar, 1.33em);
+    font-family:var(--heading4-font,var(--heading-font));
+    font-size:var(--heading4-text-size);
+}
+h5{
+    color:var(--heading5-text, var(--heading-text));
+    margin-top:var(--heading5-top-mar, 1.67em);
+    margin-bottom:var(--heading5-bot-mar, 1.67em);
+    font-family:var(--heading5-font,var(--heading-font));
+    font-size:var(--heading5-text-size);
+}
+h6{
+    color:var(--heading6-text, var(--heading-text));
+    margin-top:var(--heading6-top-mar, 2.33em);
+    margin-bottom:var(--heading6-bot-mar, 2.33em);
+    font-family:var(--heading6-font,var(--heading-font));
+    font-size:var(--heading6-text-size);
+}
+
+/* p{}
+
+ul,ol{
+
+} */
+/* nur zum testen */
+.test body{-webkit-filter:grayscale(1);filter:grayscale(1);}
+
+ /* Basis-formartierung a :hover/:focus */
+a{
+    display:inline-block;
+    color:var(--color-a-in, inherit);
+    background:var(--a-bg-color, none);
+    -webkit-text-decoration:var(--a-text-deco, none);
+       -moz-text-decoration:var(--a-text-deco, none);
+            text-decoration:var(--a-text-deco, none);
+    margin-top:var(--a-mar-top, 4px);
+    margin-bottom:var(--a-mar-bot, 4px);
+    /* outline:0; */
+}
+a:hover,a:focus{
+    -webkit-text-decoration:var(--hover-text-deco, underline);
+       -moz-text-decoration:var(--hover-text-deco, underline);
+            text-decoration:var(--hover-text-deco, underline);
+    color:var(--hover-text-color, inherit);
+    background:var(--hover-bg-color, none);
+}
+li:hover a,
+li:focus-within a{
+    color:var(--color-a-in);
+    background:none;
+}
+li{
+    color:var(--li-text-color, inherit);
+    background:var(--li-bg-color,none);
+    margin-top:var(--li-mar-top);
+    margin-bottom:var(--li-mar-bot);
+    margin-left:var(--li-mar-left);
+    margin-right:var(--li-mar-right);
+    padding-top:var(--li-pad-top);
+    padding-bottom:var(--li-pad-bot);
+    padding-left:var(--li-pad-left);
+    padding-right:var(--li-pad-right);
+}
+li:hover,
+li:focus-within{
+    background:var(--a-bg-color, none);
+    color:var(--hover-text-color, var(--color5));
+}
+
+/* IMG Basisformartierung */
+img{display:inline-block;}
+
+img[src$=".png"],img[src$=".gif"]{
+    background:none;
+  }
+
+/* min. anklickbare Fläche */
+a img{
+    min-width:var(--a-img-min-width);
+    min-height:var(--a-img-min-height);
+}
+
+/* input,select,textarea{
+    hintergrund,ggf. rahmen,ggf. textfarbe
+} */
+/* input:focus,select:focus,textarea:focus{} */
+
+/* input:hover,select:hover,textarea:hover{} */

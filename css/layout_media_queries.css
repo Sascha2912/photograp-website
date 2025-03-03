@@ -1,0 +1,182 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 80 version
+*/
+
+@media screen and (max-width:66.5em){
+    body{
+        padding:0;
+    }
+    .logo-1{
+        display:none;
+    }
+    .logo-2{
+        display:block;
+        
+    }
+    header{
+        background:url(../img/IMG_3030neu.jpg);
+    }
+}
+@media screen and (max-width:55em){
+    nav ul .col-20{
+        width:-webkit-calc(33% - 8px);
+        width:calc(33% - 8px);
+    }
+     nav ul .col-20+li+li+li{
+        width:-webkit-calc(50% - 8px);
+        width:calc(50% - 8px);
+    }
+    nav ul{
+        -webkit-flex-wrap:wrap;
+            -ms-flex-wrap:wrap;
+                flex-wrap:wrap;
+    }
+    .logo_rosa{
+        position:static;
+    }
+}
+@media screen and (max-width:37em){
+
+    body{
+        Padding-top:35px;
+        position:relative;
+        background:#fff;
+    }
+    .footernav{
+        display:block
+    }
+    nav{
+        position:fixed;
+        height:25px;
+        top:10px;
+        left:10px;
+        right:10px;
+        margin:0;
+        background:#d97d7a;
+        padding:10px; 
+        -webkit-border-radius:3px; 
+                border-radius:3px;
+      }
+      .footernav{
+        display:block
+    }
+    nav ul{
+        display:block;
+        background:rgba(0,0,0,0.5);
+        -webkit-border-radius:2px;
+                border-radius:2px;
+    }
+    nav ul .col-20{
+        width:-webkit-calc(100% - 8px);
+        width:calc(100% - 8px);
+    }
+    nav ul .col-20+li+li+li{
+        width:-webkit-calc(100% - 8px);
+        width:calc(100% - 8px);
+    }
+    header{
+        background:none;
+    }
+    .logo-2{
+        display:none;
+    }
+    .logo-3{
+        display:block;
+    }
+    /* Hamburger Navi */
+    nav .show{
+        display:none;
+        margin-top:9px;
+    }
+    .open{
+        display:block;
+    }
+    .open:target ~ ul,
+    .open:target ~ .close{
+        display:block;
+    }
+    .open:target{
+        display:none;
+    }
+    .open, .close{
+        width:2em;
+        height:1.5em;
+        overflow:hidden;
+        margin-right:auto;
+        -webkit-transition:all 0.6s;
+        -o-transition:all 0.6s;
+        transition:all 0.6s;
+    }
+    .open:before{
+        content:"";
+        border-top:5px solid;
+        border-bottom:double 14px;
+        display:inline-block;
+        width:80%;
+        padding:4px 0 0;
+      }
+    .close:before{
+        content:"X";
+        display:inline-block;
+        width:80%;
+        font-weight:bold;
+        font-size:40px;
+        line-height:22px;
+    }
+    nav ul li{
+        color:#fff;
+    }
+
+    nav>a{
+        color:#fff;
+    }
+    nav>a:hover,
+    nav>a:focus{
+          color:#5a5a5a;
+    }
+    .active,
+    .active:hover,
+    .active:focus-within,
+    [aria-current="true"].active.sub:hover,
+    [aria-current="true"].active.sub:focus-within{
+    background:none;
+    color:#d97d7a;
+    font-weight:bold;
+    }
+    h1,h2{
+        font-size:2em;
+    }
+}
+/* STARTSEITE */
+@media screen and (max-width:47.5em){
+    ol [class*="col-"]{
+        --col:100%;
+    }
+    .index h3{
+        display:block;
+    }
+    .logo_rosa{
+        max-width:500px;
+        max-height:500px;
+        width:100%;
+        height:auto;
+        margin-top:0px;
+    }
+    .index_logo .logo_rosa{
+        max-width:500px;
+        max-height:500px;
+        width:100%;
+        height:auto;
+        margin-top:20px;
+
+    }
+}
+/* GALERIE */
+@media screen and (max-width:44.4em){
+    figure [class*="col-"]{
+        --col:100%;
+    }
+}

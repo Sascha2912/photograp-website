@@ -1,0 +1,270 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 80 version
+*/
+
+/* SEITEN AUFBAU */
+body{
+    background:url(../img/IMG_3030neu.jpg);
+    background-attachment:fixed;
+    padding:50px;
+    margin:10px;
+    font-size:1.1em;
+
+}
+.wrap{
+    background:#ffffff;
+    padding:10px;
+}
+/* KOPFBEREICH / FUßBEREICH */
+h1,h2{
+    margin:100px 0px;
+    text-align:center;
+    font-size:2.5em;
+}
+h3{
+    text-align:center;
+    font-size:1.5em  
+}
+h1 a,
+h2 a{
+margin:0;
+}
+
+header a img{
+    width:100%;
+    height:auto;
+}
+nav{margin:40px 0px;}
+/* nav ul li{
+    width:calc(20% - 8px);
+
+} */
+footer{
+    margin:20px 0px;
+    border-top:1px solid #d97d7a;
+}
+nav ul li,
+footer ul li{
+    text-align:center;
+    margin:4px 4px;
+    /* flex-grow:1; */
+}
+nav a,
+footer a{
+    display:block;
+}
+.footernav{
+    display:none;
+}
+footer ul{
+    max-width:250px;
+    margin-left:auto;
+    margin-right:auto;
+}
+/* EINZELNE SEITEN */
+
+/* Index */
+.index ol{
+    list-style:none;
+    margin-top:80px;
+    margin-bottom:0px;
+    padding:0;
+}
+.index li{
+    text-align:center;
+}
+.index li a,
+.index li img{
+    width:100%;
+    height:auto;
+}
+.index h3{
+    margin-top:60px;
+    margin-bottom:20px;
+    display:none;
+}
+.logo_rosa{
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:250px;
+    max-height:250px;
+    min-width:200px;
+    min-height:200px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:100px;
+    margin-bottom:20px;
+}
+.logo_rosa-2{
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:250px;
+    max-height:250px;
+    min-width:200px;
+    min-height:200px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:100px;
+    margin-bottom:20px;
+}
+.index_logo{
+    margin-top:0px;
+}
+.index_logo .logo_rosa{
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:250px;
+    max-height:250px;
+    min-width:200px;
+    min-height:200px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0px;
+    margin-bottom:20px;
+}
+
+
+
+/* Impressum */
+article h2,
+article h3{
+    font-family:'Courier New', Courier, monospace;
+    margin:10px 0px;
+    width:100%;
+    height:auto;
+}
+article p{
+    text-align:center;
+    margin:5px 0px;
+}
+section .impressum{
+    display:block;
+}
+/* About me */
+.about h3{
+    margin:60px 0px;
+}
+.about p{
+    margin:40px 0px;
+    font-size:1.3em;
+}
+.about img{
+    display:block;
+    max-width:500px;
+    width:100%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+.about a{
+    display:block;
+    padding:20px;
+    max-width:300px;
+    max-height:80px;
+    margin-left:auto;
+    margin-right:auto;
+    border: 2px solid #000;
+    color:#fff;
+    background:#000;
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+.about a:hover,
+.about a:focus{
+    background:#d97d7a;
+}
+.span-1{font-weight:bold;}
+.span-2{font-style:italic;}
+
+/* Kontankt */
+form select{
+    width: 300px;
+    height:30px;
+    font-size:1em;
+    margin:10px 0px;
+}
+
+form input{
+    width: 300px;
+    height:30px;
+    font-size:1em;
+    margin:10px 0px;
+    display:block;
+}
+form label{
+    display:block;
+}
+form textarea{
+    max-width:450px;
+    min-height:100px;
+    width:100%;
+    height:auto;
+}
+form .button{
+    background:#000;
+    color:#fff;
+    width:100px;
+    height:50px;
+    margin:25px 0px;
+    border: 2px solid #000;
+    font-size:1em;
+}
+form .button:hover,
+form .button:focus{
+    background:#d97d7a;
+}
+form p{
+    margin:0;
+}
+/* Galerie */
+figure{
+    margin-left:0;
+    margin-right:0;
+    margin-top:10px;
+}
+figure a{
+    text-align:center;
+    font-size:1em;
+}
+figure img{
+    max-width:100%;
+    height:auto;
+}
+figure li{
+    margin:5px 0px;
+}
+
+/* EINZELNE ELEMENTE */
+img{
+    min-width:100px;
+    min-height:100px;
+}
+ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+/* KLASSEN */
+.pflicht{
+    color:red;
+}
+.logo-2,
+.logo-3{
+    display:none;
+    max-width:300px;
+    max-height:300px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    height:auto;
+}
+.open,.close{
+    display:none;
+}

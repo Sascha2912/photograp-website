@@ -9,6 +9,7 @@
 body{
     background:url(../img/IMG_3030neu.jpg);
     background-attachment:fixed;
+    background-size: cover;
     padding:50px;
     margin:10px;
     font-size:1.1em;

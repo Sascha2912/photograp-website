@@ -207,6 +207,7 @@ form textarea{
     min-height:100px;
     width:100%;
     height:auto;
+    font-size:1.25em;
 }
 form .button{
     background:#000;

@@ -34,7 +34,7 @@
         </nav>
          <!-- MITTELBEREICH -->
             <h1>Kontakt aufnehmen</h1>
-            <form method="post" class="wrap-2">
+            <form id="contact-form" action="https://formspree.io/f/DEINE_FORM_ID" method="POST" class="wrap-2">
 
                 <label for="anrede">Anrede:</label>
                 <select id="anrede" name="anrede">
@@ -43,28 +43,32 @@
                     <option value="Herr">Herr</option>
                     <option value="Frau">Frau</option>
                 </select>
-            
+
                 <label for="vorname">Vorname<span class="pflicht">*</span>:</label>
                 <input id="vorname" name="vorname" required>
-                
+
                 <label for="nachname">Nachname<span class="pflicht">*</span>:</label>
-                <input id ="nachname" name="nachname" required>
-                
+                <input id="nachname" name="nachname" required>
+
                 <label for="stadt">Stadt:</label>
                 <input id="stadt" name="stadt">
-                
+
                 <label for="email">E-Mail<span class="pflicht">*</span>:</label>
                 <input id="email" name="email" type="email" required>
-                
+
                 <label for="telefon">Telefon:</label>
                 <input type="tel" id="telefon" name="telefon">
-                
+
                 <label for="note">Nachricht<span class="pflicht">*</span>:</label>
                 <textarea id="note" name="note" rows="4" cols="50" placeholder="Text einfügen" required></textarea>
-                 
+
+                <input type="hidden" name="_subject" value="Neue Kontaktanfrage von der Website">
+
                 <input type="submit" value="Absenden" class="button">
                 <p><span class="span-1">Hinweis</span>: Bitte die mit <span class="pflicht">*</span> gekennzeichneten Felder ausfüllen.</p>
+                <p id="form-status" class="form-status" aria-live="polite"></p>
             </form>
+
             <figure><img class="logo_rosa-2" src="../img/Logo_rosa_500px.jpg" alt="rosa_logo-2"></figure>
         
 
@@ -77,5 +81,6 @@
             </ul>
         </footer>
     </div>
+    <script src="../js/contact.js"></script>
 </body>
 </html>

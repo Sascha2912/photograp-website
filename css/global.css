@@ -262,6 +262,11 @@ a img{
     min-height:var(--a-img-min-height);
 }
 
+.form-status {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
 /* input,select,textarea{
     hintergrund,ggf. rahmen,ggf. textfarbe
 } */
